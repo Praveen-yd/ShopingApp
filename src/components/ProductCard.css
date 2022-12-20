@@ -1,0 +1,45 @@
+.card{
+    display: inline-block;
+    margin:10px
+}
+.card-body{
+    height:4rem;
+}
+.card-title{
+    text-align: left;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: -o-ellipsis-lastline;
+}
+.card-img-top{
+    object-fit: contain;
+    height: 300px;
+}
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category ,.rating{
+    color: grey;
+}
+.list-group-item{
+    border:none;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+.list-group{
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-buttons{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
