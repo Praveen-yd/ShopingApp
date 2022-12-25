@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Header.css";
-
+import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
+import { useLocation } from 'react-router-dom'
 import SearchIcon from '@mui/icons-material/Search';
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
+import {CalculateTotalItemInCart} from '../utils/util'
+import SearchBar from './searchBar';
 
 const Header = () => {
-  return (
+  const cart = useSelector((state)=>state.cartReducer.cart);
+     
+    const totalItems = CalculateTotalItemInCart(cart);
+    const location = useLocation();
+    console.log(location.pathname)
+ 
+     return (
     <div className="header">
+      <Link to={'/home'} style={{textDecoration:'none' } } >
       <div>
         <img
           className="header__logo"
@@ -14,20 +25,25 @@ const Header = () => {
           alt="amazon logo"
         />
       </div>
+      </Link>
       <div className="header__search">
-        <input className="header__searchInput" type="text" placeholder='search products here...'/>
-        <SearchIcon className="header__searchIcon"></SearchIcon>
+        {/* {(location.pathname=='/home')&&  */}
+      {/* // <SearchBar inputSearch={inputSearch} setInputSearch={setInputSearch} /> */}
+     {/* } */}
+        {/* <SearchIcon className="header__searchIcon"></SearchIcon> */}
       </div>
-      <div className="header__nav">
+      <Link to={'/cart'} style={{textDecoration:'none' } } >
         <div className="header__elements">
           <AddShoppingCartOutlinedIcon fontSize="large" />
 
           <div className="header__option">
-            <span className="header__optionLineOne header__cartCount">0</span>
+            <span className="header__optionLineOne header__cartCount">
+              {totalItems}
+              </span>
             <span className="header__optionLineTwo">Cart</span>
           </div>
-        </div>
       </div>
+          </Link>
     </div>
 
   )

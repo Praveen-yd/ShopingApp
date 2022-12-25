@@ -1,12 +1,13 @@
 .card{
     display: inline-block;
-    margin:10px
+    margin: 10px;
 }
 .card-body{
     height:4rem;
 }
 .card-title{
     text-align: left;
+    color: rgb(1, 100, 72);
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -14,6 +15,7 @@
     text-overflow: -o-ellipsis-lastline;
 }
 .card-img-top{
+    padding: 15px;
     object-fit: contain;
     height: 300px;
 }
@@ -41,5 +43,13 @@
 .card-buttons{
 display: flex;
 flex-direction: row;
+align-items: center;
 justify-content: space-between;
+}
+
+.button-bg{
+    background-color: #8EC3B0;
+}
+.button-bg:hover{
+    background-color: rgb(1, 100, 72);
 }

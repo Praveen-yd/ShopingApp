@@ -9,6 +9,8 @@ const Products = () => {
     const products= useSelector((state)=>state)
     const dispatch = useDispatch();
 
+     
+
     const fetchProducts=async()=>{
         const response= await axios
         .get("https://fakestoreapi.com/products")
@@ -21,7 +23,6 @@ const Products = () => {
     useEffect(()=>{
         fetchProducts();
     },[])
-    console.log("products: ",products);
   return (
     <div>
         <h2>All Products</h2>

@@ -1,7 +1,9 @@
 import React from 'react'
+
 import "./Banner.css"
 
 const Banner = () => {
+  
   return (
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
               <div className="carousel-indicators">
@@ -11,21 +13,25 @@ const Banner = () => {
               </div>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src="https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_960_720.jpg" className="d-block w-100 carousal-img" alt="..." />
-                  <div className="carousel-caption d-none d-md-block">
+                  <img src="https://static.vecteezy.com/system/resources/previews/004/299/835/original/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg" className="d-block w-100 carousal-img" alt="..." />
+                  {/* <div className="d-block w-100"> 
+                  <img className='carousal-img' src='https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg'></img> */}
+
+                  {/* </div> */}
+                  {/* <div className="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="carousel-item">
-                  <img src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_960_720.jpg" className="d-block w-100 carousal-img" alt="..." />
+                  <img src="https://www.pngitem.com/pimgs/m/9-98563_ecommerce-website-development-ecommerce-website-banner-design-hd.png" className="d-block w-100 carousal-img" alt="..." />
                   <div className="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src="https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_960_720.jpg" className="d-block w-100 carousal-img" alt="..." />
+                  <img src="https://t4.ftcdn.net/jpg/05/46/13/95/240_F_546139504_fC3Vh5EJtsS4ejBZU6wYSEkry6jlvtXx.jpg" className="d-block w-100 carousal-img" alt="..." />
                   <div className="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>

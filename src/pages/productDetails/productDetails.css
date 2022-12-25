@@ -1,0 +1,39 @@
+.product-details{
+    display:flex;
+    padding: 50px;
+}
+
+.product-img{
+width: 40vw;
+height: 70vh;
+object-fit: contain;
+
+}
+.product-content{
+    display: flex;
+    /* height: 70vh; */
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.title{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size:2rem ;
+}
+.description{
+font-weight: 300;
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+.category, .rating{
+    margin-bottom: .5rem;
+}
+.price{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.button{
+    width:50%
+}

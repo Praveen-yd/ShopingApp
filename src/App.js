@@ -3,7 +3,9 @@ import React from 'react'
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import './App.css';
 import Header from './components/Header';
+import Cart from './pages/Cart/cart';
 import Home from './pages/Home/Home';
+import ProductDetails from './pages/productDetails/productDetails';
 
 function App() {
   return (
@@ -15,7 +17,11 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route
             path="/product/:productId"
-            element={<productDetails />}
+            element={<ProductDetails />}
+          />
+          <Route
+            path="/cart"
+            element={<Cart />}
           />
       </Routes>
       </BrowserRouter>
