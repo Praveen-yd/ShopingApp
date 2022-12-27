@@ -19,6 +19,7 @@ const Header = () => {
     <div className="header">
       <Link to={'/home'} style={{textDecoration:'none' } } >
       <div>
+        
         <img
           className="header__logo"
           src="https://lineshoppingseller.com/images/logo/my-shop-logo.svg "
