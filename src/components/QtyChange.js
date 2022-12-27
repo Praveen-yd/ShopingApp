@@ -16,7 +16,7 @@ const QtyChange = (props) => {
       const {qty}=products;
       console.log('product.qty :',products)
   return (
-    <div class="btn-group mr-2" role="group" aria-label="Second group">
+    <div class="btn-group" role="group" aria-label="Second group">
                         <button type="button" className="btn btn-secondary button" onClick={()=> 
                       removeFromCartAction( props.item)
                     }>-</button>

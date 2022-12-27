@@ -25,17 +25,11 @@ const Banner = () => {
                 </div>
                 <div className="carousel-item">
                   <img src="https://www.pngitem.com/pimgs/m/9-98563_ecommerce-website-development-ecommerce-website-banner-design-hd.png" className="d-block w-100 carousal-img" alt="..." />
-                  <div className="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                  </div>
+                  
                 </div>
                 <div className="carousel-item">
                   <img src="https://t4.ftcdn.net/jpg/05/46/13/95/240_F_546139504_fC3Vh5EJtsS4ejBZU6wYSEkry6jlvtXx.jpg" className="d-block w-100 carousal-img" alt="..." />
-                  <div className="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                  </div>
+                 
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

@@ -3,6 +3,7 @@ import React from 'react'
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import './App.css';
 import Header from './components/Header';
+import AllProducts from './pages/allProducts/allProducts';
 import Cart from './pages/Cart/cart';
 import Home from './pages/Home/Home';
 import ProductDetails from './pages/productDetails/productDetails';
@@ -19,6 +20,7 @@ function App() {
             path="/product/:productId"
             element={<ProductDetails />}
           />
+          <Route path='/products' element={<AllProducts/>}/>
           <Route
             path="/cart"
             element={<Cart />}

@@ -6,9 +6,9 @@ export const setProducts=(products)=>{
         payload:products,
     }
 }
-export const selectedProducts=(products)=>{
+export const setSearchText=(text)=>{
     return{
-        type: ActionTypes.SELECTED_PRODUCTS,
-        payload:products,
+        type: ActionTypes.SET_SEARCH_TEXT,
+        payload:text,
     }
 }

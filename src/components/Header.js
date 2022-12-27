@@ -27,9 +27,9 @@ const Header = () => {
       </div>
       </Link>
       <div className="header__search">
-        {/* {(location.pathname=='/home')&&  */}
-      {/* // <SearchBar inputSearch={inputSearch} setInputSearch={setInputSearch} /> */}
-     {/* } */}
+        {(location.pathname=='/home'|| location.pathname =='/products')&& 
+      <SearchBar />
+     }
         {/* <SearchIcon className="header__searchIcon"></SearchIcon> */}
       </div>
       <Link to={'/cart'} style={{textDecoration:'none' } } >
